@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compre - Probrastec</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ========================= -->
+<!-- MENU -->
+<!-- ========================= -->
+<nav class="nav">
+
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul class="menu">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="index.html#sobre">Quem Somos</a></li>
+    <li><a href="index.html#servicos">Serviços</a></li>
+    <li><a href="compre.html">Compre</a></li>
+    <li><a href="index.html#contato">Contato</a></li>
+  </ul>
+
+  <div class="logo">
+    <img src="logo.jpg" alt="Logo">
+  </div>
+
+  <a class="btn-nav" href="https://wa.me/5521996361723">
+    Orçamento
+  </a>
+
+</nav>
+
+<!-- ========================= -->
+<!-- HERO -->
+<!-- ========================= -->
+<header class="buy-hero">
+  <h1>Comparador Inteligente</h1>
+  <p>Compare preços e veja automaticamente a melhor oferta e quanto você economiza.</p>
+</header>
+
+<!-- ========================= -->
+<!-- FILTROS -->
+<!-- ========================= -->
+<div class="filters">
+  <button onclick="filterProducts('all')">Todos</button>
+  <button onclick="filterProducts('automacao')">Automação</button>
+  <button onclick="filterProducts('seguranca')">Segurança</button>
+  <button onclick="filterProducts('eletrica')">Elétrica</button>
+</div>
+
+<!-- ========================= -->
+<!-- PRODUTOS -->
+<!-- ========================= -->
+<section class="products">
+
+  <!-- PRODUTO 1 -->
+  <div class="product-card automacao">
+
+    <img src="WhatsApp Image 2026-04-25 at 15.03.21.jpeg" class="product-img">
+
+    <h2>Cabo Flexivel 2,5mm Rolo Com 100 Metros 750v Fio Unipolar</h2>
+
+    <p>Marca: ILLUMINIX
+
+Comprimento: 100 Metros
+
+Seção: 1 x 2,5mm²
+
+Antichamas: Sim
+
+Material: Alucobre
+
+Modelo: Unipolar, Flexível
+
+Peso: 2,300 gramas
+
+Tensão: 750v
+
+Amperagem: 10a
+
+Validade: Indeterminada</p>
+
+    <div class="economy-box"></div>
+
+    <div class="price-box">
+
+      <div class="price-item" data-price="119.90">
+        <span>Shopee</span>
+        <strong>R$ 51,59</strong>
+        <a href="https://s.shopee.com.br/qfqT8V6py" class="shopee" target="_blank">
+          <i class="fa-solid fa-bag-shopping"></i> Shopee
+        </a>
+      </div>
+
+      <div class="price-item" data-price="129.90">
+        <span>Mercado Livre</span>
+        <strong>R$ 57,00</strong>
+        <a href="https://meli.la/19DKEEg" class="ml-btn" target="_blank">
+          <img src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.0/mercadolibre/favicon.svg">
+          ML
+        </a>
+      </div>
+
+      <div class="price-item" data-price="139.90">
+        <span>Amazon</span>
+        <strong>R$ 72,99</strong>
+        <a href="https://amzn.to/3R0j9oA" class="amazon" target="_blank">
+          <i class="fa-brands fa-amazon"></i> Amazon
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- PRODUTO 2 -->
+  <div class="product-card seguranca">
+
+    <img src="WhatsApp Image 2026-04-25 at 15.20.32.jpeg" class="product-img">
+
+    <h2>Alicate Universal Eletricista 8" Sata Isolado 1000V Aço Cr-V Amarelo</h2>
+
+    <p>Alicate Universal Eletricista 8” Sata ST75104L
+
+O alicate universal 8” da Sata é a ferramenta ideal para profissionais que buscam desempenho, resistência e segurança no dia a dia. Indicado para diversas aplicações elétricas, oferece excelente precisão no corte, aperto e manuseio de fios.
+
+</p>
+
+    <div class="economy-box"></div>
+
+    <div class="price-box">
+
+      <div class="price-item" data-price="79.90">
+        <span>Shopee</span>
+        <strong>R$ 62,60</strong>
+        <a href="https://s.shopee.com.br/2LUeGw6hjC" class="shopee" target="_blank">
+          <i class="fa-solid fa-bag-shopping"></i> Shopee
+        </a>
+      </div>
+
+      <div class="price-item" data-price="89.90">
+        <span>Mercado Livre</span>
+        <strong>R$ 53,75</strong>
+        <a href="https://meli.la/1mSLwNr" class="ml-btn" target="_blank">
+          <img src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.0/mercadolibre/favicon.svg">
+          ML
+        </a>
+      </div>
+
+      <div class="price-item" data-price="95.90">
+        <span>Amazon</span>
+        <strong>R$ 67,15</strong>
+        <a href="https://amzn.to/4u7gIie" class="amazon" target="_blank">
+          <i class="fa-brands fa-amazon"></i> Amazon
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- PRODUTO 3 -->
+  <div class="product-card eletrica">
+
+    <img src="WhatsApp Image 2026-04-25 at 16.00.50.jpeg" class="product-img">
+
+    <h2>Multímetro Digital com Iluminação Bip Profissional Portátil MD-180L</h2>
+
+    <p>Multímetro digital portátil LCD de 3 ½ dígitos com iluminação de fundo
+
+O Multímetro é um instrumento digital portátil, com fusível de auto restauração, teste de linha viva, holster protetor, LCD de 3 ½ dígitos com iluminação de fundo, de acordo com a categoria II de segurança, congelamento de leitura, desligamento automático e mudança de faixa manual. Realiza medidas de tensão DC e AC, corrente DC e AC, resistência e testes de linha viva, hFE de transístor, díodo e continuidade.</p>
+
+    <div class="economy-box"></div>
+
+    <div class="price-box">
+
+      <div class="price-item" data-price="36.99">
+        <span>Shopee</span>
+        <strong>R$ 36,99</strong>
+        <a href="https://s.shopee.com.br/80913FidEK" class="shopee" target="_blank">
+          <i class="fa-solid fa-bag-shopping"></i> Shopee
+        </a>
+      </div>
+
+      <div class="price-item" data-price="39.99">
+        <span>Mercado Livre</span>
+        <strong>R$ 39,99</strong>
+        <a href="https://meli.la/2QzAtrk" class="ml-btn" target="_blank">
+          <img src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.0/mercadolibre/favicon.svg">
+          ML
+        </a>
+      </div>
+
+      <div class="price-item" data-price="29.99">
+        <span>Amazon</span>
+        <strong>R$ 29,99</strong>
+        <a href="https://amzn.to/4sTLQRq" class="amazon" target="_blank">
+          <i class="fa-brands fa-amazon"></i> Amazon
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- JS -->
+<!-- ========================= -->
+<script>
+
+/* ========================= */
+/* MENU */
+/* ========================= */
+function toggleMenu() {
+  document.querySelector('.menu').classList.toggle('active');
+  document.querySelector('.menu-toggle').classList.toggle('active');
+}
+
+/* ========================= */
+/* FILTRO */
+/* ========================= */
+function filterProducts(category) {
+  document.querySelectorAll('.product-card').forEach(p => {
+    p.style.display = (category === 'all' || p.classList.contains(category))
+      ? 'block'
+      : 'none';
+  });
+}
+
+/* ========================= */
+/* PEGAR PREÇO CORRETO */
+/* ========================= */
+function getPrice(item) {
+
+  let text = item.querySelector("strong").innerText;
+
+  // remove tudo que não for número ou vírgula
+  text = text.replace(/[^\d,]/g, "");
+
+  // troca vírgula por ponto
+  text = text.replace(",", ".");
+
+  return parseFloat(text);
+}
+
+/* ========================= */
+/* SISTEMA INTELIGENTE */
+/* ========================= */
+function analyzeProducts() {
+
+  document.querySelectorAll('.product-card').forEach(product => {
+
+    const items = product.querySelectorAll('.price-item');
+
+    let min = Infinity;
+    let max = -Infinity;
+    let best = null;
+
+    items.forEach(item => {
+
+      const price = getPrice(item);
+
+      if (!isNaN(price)) {
+
+        if (price < min) {
+          min = price;
+          best = item;
+        }
+
+        if (price > max) {
+          max = price;
+        }
+
+      }
+
+    });
+
+    /* ========================= */
+    /* MELHOR OFERTA */
+/* ========================= */
+    items.forEach(i => i.classList.remove('best-offer'));
+
+    if (best) best.classList.add('best-offer');
+
+    /* ========================= */
+    /* ORDENAÇÃO */
+/* ========================= */
+    const sorted = Array.from(items).sort((a, b) => {
+      return getPrice(a) - getPrice(b);
+    });
+
+    const box = product.querySelector('.price-box');
+
+    sorted.forEach(i => box.appendChild(i));
+
+    /* ========================= */
+    /* ECONOMIA */
+/* ========================= */
+    const economy = product.querySelector('.economy-box');
+
+    const savings = max - min;
+
+    if (economy && !isNaN(savings) && savings > 0) {
+
+      economy.innerHTML =
+        `💰 Economize R$ ${savings.toFixed(2).replace(".", ",")}`;
+
+    } else {
+
+      economy.innerHTML = "";
+
+    }
+
+  });
+
+}
+
+/* ========================= */
+/* INIT */
+/* ========================= */
+window.onload = analyzeProducts;
+
+</script>
+
+</body>
+</html>
